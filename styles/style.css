@@ -1,5 +1,194 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+/* Файл variables.css */
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  max-width: 1024px;
+  margin: 0 auto;
+  background-image: url(../images/cover-image-dark.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Header */
+
+.header {
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  padding: 20px;
+  gap: 10px;
+  position: relative;
+  height: 768px;
+  margin-block-end: 60px;
+}
+
+.header::before {
+  position: absolute;
+  top: 21px;
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+  inset-inline-end: 20px;
+}
+
+.header::after {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+  inset-block-end: 20px;
+  inset-inline-start: 20px;
+}
+
+.header__theme-menu {
+  text-align: center;
+}
+
+.header__theme-menu-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.header__theme-menu-item {
+  list-style-type: none;
+}
+
+.header__record {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: var(--accent-color);
+  text-align: center;
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.header__record::after {
+  display: inline-block;
+  margin-left: 10px;
+  content: "";
+  width: 9px;
+  height: 9px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  filter: drop-shadow(0px 0px 4px var(--accent-color));
+}
+
+/* Button */
+
+.header__theme-menu-button {
+  background-color: transparent;
+  border: 1px solid transparent;
+  text-transform: lowercase;
+  color: var(--accent-color);
+  padding: 0 13px;
+  text-align: center;
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  height: 23px;
+  cursor: pointer;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid rgba(255, 0, 112, 0.4);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--accent-color);
+  pointer-events: none;
+}
+
+.header__main {
+  color: #db00ff;
+  text-shadow: 4px 4px 0 var(--accent-color);
+  font-family: IBM Plex Mono;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 82.5%;
+  margin-left: -20px;
+}
+
+.header__subtitle {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.header__text {
+  grid-column: 2;
+  align-self: center;
+}
+.title-decor {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px;
+}
+
+.content {
+  display: grid;
+  padding: 0 20px;
+  gap: 80px;
+}
+
+.content__box {
+  display: grid;
+  grid-template-columns: minmax(auto, 314px) auto;
+  gap: 20px;
+}
+
+.content__box__text {
+  display: grid;
+  gap: 20px;
+}
+
+.content__box__text-element {
+  display: grid;
+  gap: 10px;
+}
+
+.content__box__text-element-desc {
+  color: #f1b2ce;
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.4px;
+}
+
+.content__box-title {
+  color: #ff0070;
+
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px;
 }
