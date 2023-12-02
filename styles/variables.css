@@ -5,4 +5,9 @@
 :root {
   --accent-color: #ff0070;
   --text-color: #000028;
+  --text-title-color: #ff0070;
+  --hover-color: rgba(255, 0, 112, 0.4);
+  --h1-color: #db00ff;
+  --text-element: #f1b2ce;
+  --color-shadow: #ff0070;
 }
