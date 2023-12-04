@@ -178,6 +178,7 @@
 .content__box__text-element {
   display: grid;
   gap: 10px;
+  align-self: start;
 }
 
 .content__box__text-element-desc {
@@ -208,12 +209,6 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-}
-
-.content__box__text-element-grid {
-  display: grid;
-  gap: 10px;
-  align-self: start;
 }
 
 .title-weight {
@@ -329,7 +324,6 @@
   }
 
   .content__box-title {
-    height: 70px;
     width: 236px;
   }
 
