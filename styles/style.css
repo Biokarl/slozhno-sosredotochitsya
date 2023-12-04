@@ -161,7 +161,6 @@
   display: grid;
   padding: 0 20px;
   gap: 80px;
-  /* margin-block-end: 80px; */
 }
 
 .content__box {
@@ -191,7 +190,6 @@
 
 .content__box-title {
   color: var(--text-title-color);
-
   font-family: IBM Plex Mono;
   font-size: 18px;
   font-style: normal;
@@ -227,7 +225,6 @@
   display: grid;
   gap: 20px;
   margin-block-end: 60px;
-  /* max-height: 984px; */
 }
 
 .content__picture-imgs {
@@ -274,7 +271,7 @@
 .footer {
   position: relative;
   height: 768px;
-  /* padding: 20px; */
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -310,7 +307,7 @@
 
 @media (768px <= width < 1024px) {
   .header {
-    height: 1024px;
+    min-height: 1024px;
   }
 
   .header__theme-menu {
@@ -338,5 +335,95 @@
   .content__box__text-grid {
     display: flex;
     flex-direction: column;
+  }
+
+  .content__picture-imgs {
+    max-height: 780px;
+  }
+
+  .footer {
+    min-height: 1024px;
+  }
+}
+
+@media (375px <= width < 768px) {
+  .header {
+    padding: 10px;
+    max-height: 668px;
+    margin-block-end: 40px;
+  }
+
+  .header::before {
+    top: 10px;
+    inset-inline-end: 10px;
+  }
+
+  .header::after {
+    inset-block-end: 10px;
+    inset-inline-start: 10px;
+  }
+
+  .header__theme-menu {
+    display: flex;
+    justify-content: end;
+  }
+
+  .header__theme-menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .header__subtitle {
+    display: flex;
+  }
+
+  .header__record {
+    top: 10px;
+    right: 20px;
+  }
+
+  .text__title {
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    margin: 0;
+  }
+
+  .content {
+    padding: 0 10px;
+    gap: 50px;
+  }
+
+  .content__box {
+    grid-template-columns: 1fr;
+  }
+
+  .content__box__text-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .content__picture {
+    gap: 10px;
+    margin-block-end: 40px;
+  }
+
+  .content__picture-imgs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: fit-content;
+  }
+
+  .footer {
+    height: 667px;
+  }
+
+  .footer::before {
+    inset-inline-end: 10px;
+    inset-block-start: 10px;
+  }
+
+  .footer::after {
+    inset-block-end: 10px;
+    inset-inline-start: 10px;
   }
 }

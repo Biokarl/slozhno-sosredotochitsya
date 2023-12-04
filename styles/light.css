@@ -44,3 +44,15 @@
     --color-shadow: #ff0070;
   }
 }
+
+@media (768px <= width < 1024px) {
+  .text__title {
+    text-shadow: 4px 4px 0 var(--accent-color);
+  }
+}
+
+@media (375px <= width < 768px) {
+  .text__title {
+    text-shadow: 4px 4px 0 var(--accent-color);
+  }
+}
