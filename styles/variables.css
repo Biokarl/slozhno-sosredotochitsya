@@ -12,4 +12,31 @@
   --color-shadow: #ff0070;
   --bg-color-page: #000028;
   --bg-image-page: url(../images/cover-image-dark.png);
+  --display-rec: flex;
+}
+
+:root .theme_light {
+  --accent-color: #ff8dcb;
+  --text-color: #353430;
+  --text-title-color: #353430;
+  --hover-color: rgba(50, 49, 45, 0.4);
+  --h1-color: #ffc2e6;
+  --text-element: #353430;
+  --color-shadow: #ff0070;
+  --bg-color-page: #fff1f7;
+  --bg-image-page: url(../images/cover-image-light.png);
+  --display-rec: none;
+}
+
+:root .theme_dark {
+  --accent-color: #ff0070;
+  --text-color: #000028;
+  --text-title-color: #ff0070;
+  --hover-color: rgba(255, 0, 112, 0.4);
+  --h1-color: #db00ff;
+  --text-element: #f1b2ce;
+  --color-shadow: #ff0070;
+  --bg-color-page: #000028;
+  --bg-image-page: url(../images/cover-image-dark.png);
+  --display-rec: flex;
 }

@@ -4,31 +4,23 @@
   переключая тему
 */
 
-:root .theme_light {
-  --accent-color: #ff8dcb;
-  --text-color: #353430;
-  --text-title-color: #353430;
-  --hover-color: rgba(50, 49, 45, 0.4);
-  --h1-color: #ffc2e6;
-  --text-element: #353430;
-  --color-shadow: #ff0070;
-  --bg-color-page: #fff1f7;
-  --bg-image-page: url(../images/cover-image-light.png);
-}
-
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
 
-  .title-decor {
-    background-color: var(--accent-color);
-    color: var(--text-color);
-  }
-
-  .header__record {
-    display: none;
+  :root .theme_light {
+    --accent-color: #ff8dcb;
+    --text-color: #353430;
+    --text-title-color: #353430;
+    --hover-color: rgba(50, 49, 45, 0.4);
+    --h1-color: #ffc2e6;
+    --text-element: #353430;
+    --color-shadow: #ff0070;
+    --bg-color-page: #fff1f7;
+    --bg-image-page: url(../images/cover-image-light.png);
+    --display-rec: none;
   }
 }
 
@@ -44,17 +36,6 @@
     --color-shadow: #ff0070;
     --bg-color-page: #fff1f7;
     --bg-image-page: url(../images/cover-image-light.png);
-  }
-}
-
-@media (768px <= width < 1024px) {
-  .text__title {
-    text-shadow: 4px 4px 0 var(--accent-color);
-  }
-}
-
-@media (375px <= width < 768px) {
-  .text__title {
-    text-shadow: 4px 4px 0 var(--accent-color);
+    --display-rec: none;
   }
 }

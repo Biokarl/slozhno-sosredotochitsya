@@ -19,5 +19,6 @@
     --color-shadow: #ff0070;
     --bg-color-page: #000028;
     --bg-image-page: url(../images/cover-image-dark.png);
+    --display-rec: flex;
   }
 }
