@@ -10,4 +10,6 @@
   --h1-color: #db00ff;
   --text-element: #f1b2ce;
   --color-shadow: #ff0070;
+  --bg-color-page: #000028;
+  --bg-image-page: url(../images/cover-image-dark.png);
 }

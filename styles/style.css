@@ -5,7 +5,8 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   max-width: 1024px;
   margin: 0 auto;
-  background-image: url(../images/cover-image-dark.png);
+  background-color: var(--bg-color-page);
+  background-image: var(--bg-image-page);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
