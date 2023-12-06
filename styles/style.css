@@ -69,7 +69,7 @@
   right: 30px;
   color: var(--accent-color);
   text-align: center;
-  font-family: IBM Plex Mono, sans-serif;
+  font-family: IBM Plex Mono, monospace;
   font-size: 18px;
   line-height: 25px;
   text-transform: uppercase;
@@ -98,7 +98,7 @@
   color: var(--accent-color);
   padding: 0 13px;
   text-align: center;
-  font-family: IBM Plex Mono, sans-serif;
+  font-family: IBM Plex Mono, monospace;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -126,7 +126,7 @@
 
 .text__title {
   color: var(--h1-color);
-  font-family: IBM Plex Mono, sans-serif;
+  font-family: IBM Plex Mono, monospace;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-style: normal;
   font-weight: 700;
@@ -150,7 +150,7 @@
 .title-decor {
   background-color: var(--accent-color);
   color: var(--text-color);
-  font-family: IBM Plex Mono, sans-serif;
+  font-family: IBM Plex Mono, monospace;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -184,7 +184,7 @@
 
 .content__box__text-element-desc {
   color: var(--text-element);
-  font-family: IBM Plex Mono, sans-serif;
+  font-family: IBM Plex Mono, monospace;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -193,7 +193,7 @@
 
 .content__box-title {
   color: var(--text-title-color);
-  font-family: IBM Plex Mono, sans-serif;
+  font-family: IBM Plex Mono, monospace;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -304,7 +304,6 @@
 
 @media (768px <= width < 1024px) {
   .header {
-    height: 100vh;
     min-height: 1024px;
   }
 
@@ -335,7 +334,6 @@
   }
 
   .footer {
-    height: 100vh;
     min-height: 1024px;
   }
 
@@ -347,7 +345,6 @@
 @media (375px <= width < 768px) {
   .header {
     padding: 10px;
-    height: 100vh;
     min-height: 668px;
     margin-block-end: 40px;
   }
@@ -414,7 +411,6 @@
   }
 
   .footer {
-    height: 100vh;
     min-height: 668px;
   }
 

@@ -15,7 +15,7 @@
   --display-rec: flex;
 }
 
-:root .theme_light {
+/* :root .theme_light {
   --accent-color: #ff8dcb;
   --text-color: #353430;
   --text-title-color: #353430;
@@ -39,4 +39,4 @@
   --bg-color-page: #000028;
   --bg-image-page: url(../images/cover-image-dark.png);
   --display-rec: flex;
-}
+} */

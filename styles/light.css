@@ -10,18 +10,16 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 
-  :root .theme_light {
-    --accent-color: #ff8dcb;
-    --text-color: #353430;
-    --text-title-color: #353430;
-    --hover-color: rgba(50, 49, 45, 0.4);
-    --h1-color: #ffc2e6;
-    --text-element: #353430;
-    --color-shadow: #ff0070;
-    --bg-color-page: #fff1f7;
-    --bg-image-page: url(../images/cover-image-light.png);
-    --display-rec: none;
-  }
+  --accent-color: #ff8dcb;
+  --text-color: #353430;
+  --text-title-color: #353430;
+  --hover-color: rgba(50, 49, 45, 0.4);
+  --h1-color: #ffc2e6;
+  --text-element: #353430;
+  --color-shadow: #ff0070;
+  --bg-color-page: #fff1f7;
+  --bg-image-page: url(../images/cover-image-light.png);
+  --display-rec: none;
 }
 
 @media (prefers-color-scheme: light) {
